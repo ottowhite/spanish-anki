@@ -26,12 +26,10 @@ Each file is one deck, named `deck-name.csv`, and starts with this Anki import h
 - Get the Spanish right: accents, irregular forms, and natural usage. If you're unsure about something, tell me rather than guess.
 - Don't add duplicates of cards that already exist.
 
-## Sentence cards (Pretérito imperfecto deck)
+## Sentence cards
 
-`03_Pretérito-imperfecto.csv` drills conjugations inside realistic sentences instead of bare forms:
+Conjugation drills (rows tagged `es-en`/`en-es`) are realistic sentences, not bare forms. Follow `SENTENCE_CARDS.md` when writing or converting them. `03_Pretérito-imperfecto.csv` is the reference implementation.
 
-- **es-en**: Front = Spanish sentence with the target verb in `<b>`, then `<i>Pretérito imperfecto</i>`. Back = English translation (target in `<b>`), then a small line: `infinitive — gloss · person · <i>use-case</i>`.
-- **en-es**: Front = English sentence (target in `<b>`), the tense label, and a `(infinitive · person)` hint. Back = Spanish sentence plus the same info line.
-- Every sentence is unique. This matters because forms like yo/él *hablaba* are identical, and duplicate Fronts collide in Anki.
-- Tags add a `use-*` tag for the use case: `habitual`, `progress`, `description`, `age`, `time`, `weather`, `state`, `simultaneous`, `politeness`, `reported`, `intention`, `duration`.
-- Verbs that are regular in the imperfect (estar, tener, hacer, poder…) are tagged `regular` even when they are irregular in other tenses. Only ser, ir and ver are tagged `irregular`.
+- Each drill keeps its direction and person. Regular slots use a variety of common verbs of the same -ar/-er/-ir class, and irregular slots keep their verb.
+- Each drill card gets one extra `use-*` tag for its use case.
+- Reference rows (endings, formation, paradigms, usage, tips) are left untouched.
