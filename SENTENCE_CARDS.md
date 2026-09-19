@@ -19,6 +19,15 @@ Each new card keeps these properties of the drill row it replaces:
    - **Regular slots** (`regular` tag): don't reuse hablar/comer/vivir every time. Use a *variety* of very common verbs **of the same conjugation class**, so a slot that drilled an -ar verb gets another -ar verb. Only use verbs whose form in *this tense* is regular. A verb that is irregular in other tenses is fine if it's regular here (estar, tener and hacer are regular in the imperfect). Spread the verbs out and avoid reusing the same one many times.
    - **Irregular slots** (`irregular`, `irregular-participle`): keep **the same verb**, because that verb's irregularity is what's being drilled. For shared paradigms like `ser / ir` in the preterite and imperfect subjunctive, keep the meaning the old back gave. If it said "was or went", pick either and show the actual verb (`ser` or `ir`) on the card.
 
+## Keep the deck's tense
+
+- The bold form must be exactly the old drilled form in the deck's tense. Never swap in another tense to make a sentence flow better. A little awkwardness is fine; the card exists to drill the conjugation.
+- **haber in simple-tense decks** (he, hube, haya, habría, hubiera, habré…): don't use it as an auxiliary. *He perdido* or *habría venido* is a compound tense, not the deck's tense. Instead:
+  - use impersonal "there is" in the él slot (*hubo un accidente*, *habrá tráfico*, *ojalá hubiera…*), tagged `use-existential`;
+  - use *haber de* + infinitive ("have to / must") for the other persons (*hube de esperar*, *¿por qué habría de mentirte?*), tagged `use-haber-de`.
+  - In the present tense the él form is *ha*, not *hay*, so that slot uses *ha de* too.
+- The same form can belong to two tenses. For example, nosotros -ar/-ir is identical in the present and preterite (*hablamos*, *vivimos*). In those cases the sentence has to make the intended tense clear.
+
 ## Card format
 
 Spanish → English (`es-en`):
