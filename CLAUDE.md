@@ -25,3 +25,13 @@ Each file is one deck, named `deck-name.csv`, and starts with this Anki import h
 
 - Get the Spanish right: accents, irregular forms, and natural usage. If you're unsure about something, tell me rather than guess.
 - Don't add duplicates of cards that already exist.
+
+## Sentence cards (Pretérito imperfecto deck)
+
+`03_Pretérito-imperfecto.csv` drills conjugations inside realistic sentences instead of bare forms:
+
+- **es-en**: Front = Spanish sentence with the target verb in `<b>`, then `<i>Pretérito imperfecto</i>`. Back = English translation (target in `<b>`), then a small line: `infinitive — gloss · person · <i>use-case</i>`.
+- **en-es**: Front = English sentence (target in `<b>`), the tense label, and a `(infinitive · person)` hint. Back = Spanish sentence plus the same info line.
+- Every sentence is unique. This matters because forms like yo/él *hablaba* are identical, and duplicate Fronts collide in Anki.
+- Tags add a `use-*` tag for the use case: `habitual`, `progress`, `description`, `age`, `time`, `weather`, `state`, `simultaneous`, `politeness`, `reported`, `intention`, `duration`.
+- Verbs that are regular in the imperfect (estar, tener, hacer, poder…) are tagged `regular` even when they are irregular in other tenses. Only ser, ir and ver are tagged `irregular`.
